@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="fioridemocicd.controller.Principal" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            
+        <Button xmlns="sap.m" text="Ésto es una prueba" id="button0"/>
+            
+        </content>
+    </Page>
+</mvc:View>
