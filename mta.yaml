@@ -7,22 +7,13 @@ build-parameters:
       commands:
         - npm install --force
 modules:
-  - name: demo_cicd
-    type: nodejs
-    path: approuter
-    parameters:
-      disk-quota: 512M
-      memory: 512M
-    requires:
-      - name: demo_cicd_destination
-      - name: demo_cicd_html5_repo_runtime
-  - name: webapp_deployer
+  - name: demo_cicd-app-content
     type: com.sap.application.content
-    path: deployer
+    path: .
     requires:
-      - name: demo_cicd_html5_repo_host
-        parameters:
-          content-target: true
+    - name: demo_cicd_html5_repo_host
+      parameters:
+        content-target: true
     build-parameters:
       build-result: resources
       requires:
