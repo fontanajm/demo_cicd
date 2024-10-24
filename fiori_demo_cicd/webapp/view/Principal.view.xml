@@ -2,7 +2,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             
-        <Button xmlns="sap.m" text="Ésto es una prueba 81" id="button0"/>            
+        <Button xmlns="sap.m" text="Ésto es una prueba 82" id="button0"/>            
         </content>
     </Page>
 </mvc:View>
